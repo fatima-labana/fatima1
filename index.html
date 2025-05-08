@@ -35,35 +35,54 @@
             padding:0 5rem;
             background-color:#fff;
         }
+        /* تنسيق شريط التنقل الرئيسي */
+nav {
+    display: flex; /* استخدام Flexbox لترتيب العناصر بشكل أفقي */
+    width: 100%; /* عرض كامل لواجهة الصفحة */
+    justify-content: space-between; /* توزيع المسافة بين الشعار وعناصر التنقل */
+    align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
+    margin: 0 auto; /* توسيط عنصر التنقل أفقيًا */
+    padding: 0 5rem; /* هوامش داخلية أفقية */
+    background-color: #fff; /* لون خلفية أبيض */
+}
+
+/* تنسيق حاوية الشعار داخل عنصر التنقل */
+nav .logo {
+    display: flex; /* استخدام Flex لترتيب محتويات الشعار */
+    font-size: 2rem; /* حجم خط كبير لجعل الشعار بارزًا */
+    align-items: center; /* محاذاة النص عموديًا */
+}
+
+/* تنسيق نص الشعار */
+nav .logo h1 {
+    font-family: 'Rakkas'; /* خط مخصص لتمييز الشعار */
+}
+
+/* تنسيق حاوية عناصر التنقل */
+nav .nav-items {
+    display: flex; /* عرض العناصر بشكل أفقي */
+    list-style-type: none; /* إزالة النقط من قائمة العناصر */
+    padding-left: 200px; /* دفع عناصر التنقل إلى اليمين */
+}
+
+/* تنسيق كل عنصر فردي داخل قائمة التنقل */
+nav .nav-items .nav-item {
+    padding: 0 8px; /* مسافة أفقية بين كل عنصر وآخر */
+}
+
+/* تنسيق الروابط داخل عناصر التنقل */
+nav .nav-link {
+    text-decoration: none; /* إزالة الخط السفلي من الرابط */
+    color: #86775f; /* لون أساسي للرابط */
+    font-size: 16px; /* حجم خط قياسي */
+}
+
+/* تأثير التمرير (hover) على روابط التنقل */
+nav .nav-link:hover {
+    color: #4f4638; /* تغيير اللون عند التمرير لزيادة التفاعل */
+}
         
-            
-        nav.logo{
-            
-            display:flex;
-            font-size:2rem;
-            align-items:center;
-            
-        }
-        nav .logo h1{
-            font-family:'Rakkas';
-        }
-        nav .nav-items{
-            display:flex;
-            list-style-type:none;
-            padding-left:200px;
-        }
-        nav .nav-items .nav-item{
-            padding:0 8px;
-        }
-        nav .nav-link{
-            text-decoration:none;
-            color:#86775f;
-            font-size:16px;
-        }
-        nav .nav-link:hover{
-            color:#4f4638;
-        }
-            
+
             
         
 
