@@ -29,7 +29,7 @@ nav {
     width: 88%; /* عرض 88% لواجهة الصفحة */
     justify-content: space-between; /* توزيع المسافة بين الشعار وعناصر التنقل */
     align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
-    margin: 0 auto 0 auto; /* توسيط عنصر التنقل أفقيًا */
+    margin: 0 auto; /* توسيط عنصر التنقل أفقيًا */
     padding: 0 5rem; /* هوامش داخلية أفقية */
     background-color: #fff; /* لون خلفية أبيض */
     height:100px;/* ارتفاع الواجهة*/
@@ -91,7 +91,58 @@ nav .nav-link:hover {
   height: calc(100vh - 100px); /* minus nav height */
 }
 
-    
+    .login-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+
+  .login-container h2 {
+    margin-bottom: 20px;
+    color: #444;
+  }
+
+  .login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+
+  .login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .login-container button:hover {
+    background-color: #A0522D;
+  }
+
+  .login-container p {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+  .login-container a {
+    color: #8B4513;
+    text-decoration: none;
+  }
+
+  .login-container a:hover {
+    text-decoration: underline;
+  }
 
   </style>
 </head>
@@ -117,7 +168,15 @@ nav .nav-link:hover {
             </ul>
     </nav>
   <div class="page-content">
-    <!-- center this section -->
+    <div class="login-container">
+    <h2>تسجيل الدخول لمتحف القاهرة</h2>
+    <form>
+      <input type="text" placeholder="اسم المستخدم" required>
+      <input type="password" placeholder="كلمة المرور" required>
+      <button type="submit">دخول</button>
+    </form>
+    <p>ليس لديك حساب؟ <a href="https://fatima-labana.github.io/fatima1/sign.html">إنشاء حساب جديد</a></p>
+  </div>
   </div>
 
   
