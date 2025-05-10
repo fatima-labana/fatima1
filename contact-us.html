@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"> <!-- تحديد ترميز الصفحة -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- لجعل الصفحة متجاوبة مع الأجهزة المختلفة -->
-    <title>الحضارة اليونانية</title> <!-- عنوان الصفحة في المتصفح -->
+    <title>تواصل معنا</title> <!-- عنوان الصفحة في المتصفح -->
 
     <!-- استدعاء خط "Cairo","Rakkas" من Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
@@ -86,11 +86,37 @@ nav .nav-link:hover {
             button:hover{
                opacity:0.8;
             }
+           .div1 {
+            max-width: 700px; /* أقصى عرض للمربع */
+            margin: 50px auto 30px auto; /* توسيطه في الصفحة */
+            background-color: #fff; /* خلفية بيضاء للصندوق */
+            padding: 30px;
+            border-bottom: 15px solid transparent; /* حافة سفلية شفافة (ربما للتزيين) */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* ظل للصندوق */
+            text-align: center; /* توسيط النص داخل الصندوق */
+            height:600px;
+                 }
+                 .contact{
+                    max-width: 480;
+                    margin:0 auto;
 
+                 }
+                 .group{
+                    margin-bottom: 15px;
+
+                 }
+                 label {
+                    display:block;
+                    margin-bottom: 5px;
+                 }
+                 input, textarea{
+                    
+                    padding: 8px;
+                 }
             
         
 
-        .title1 {
+        
         
         </style> 
         </head>
@@ -115,7 +141,35 @@ nav .nav-link:hover {
             
             </ul>
     </nav>
-<h2>تواصل معنا</h2>
-            
+            <div class="div1">
+                <div class="contact">
+                 <h2>تواصل معنا</h2>
+                    <form action="/submit-form" method="post">
+                        <div class="group">
+                            <label for="الاسم">الاسم:</label>
+                            <input type="text" id="name" name="الاسم" placeholder="اسمك">
+                        </div>
+                        <div class="group">
+                            <label for="الرقم">الرقم:</label>
+                            <input type="tel" id="name" name="الرقم" placeholder="رقمك" style="direction: rtl; text-align: right;">
+                        </div>
+
+                        <div class="group">
+                            <label for="البريد الالكتروني">البريد الالكتروني:</label>
+                            <input type="email" id="name" name="البريد الالكتروني" placeholder="بريدك الالكتروني">
+                        </div>
+                        <div class="group">
+                            <label for="الموضوع">الموضوع:</label>
+                            <input type="text" id="name" name="الموضوع" placeholder="موضوعك">
+                        <div class="group">
+                            <label for="الرسالة">الرسالة:</label>
+                            <textarea id="message" name="الرسالة" rows="5" placeholder="اكتب رسالتك هنا"></textarea>
+                        </div>
+                       
+                    </form>
+                
+                </div>
+            </div>
         </body>
 </html>
+
