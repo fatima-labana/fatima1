@@ -31,7 +31,48 @@ nav {
     background-color: #fff; /* لون خلفية أبيض */
     height:125px;/* ارتفاع الواجهة*/
 }
+}
 
+/* تنسيق حاوية الشعار داخل عنصر التنقل */
+nav .logo {
+    display: flex; /* استخدام Flex لترتيب محتويات الشعار */
+    font-size: 2rem; /* حجم خط كبير لجعل الشعار بارزًا */
+    align-items: center; /* محاذاة النص عموديًا */
+}
+           
+/* تنسيق نص الشعار */
+nav .logo h1 {
+    font-family: 'Rakkas'; /* خط مخصص لتمييز الشعار */
+}
+
+/* تنسيق حاوية عناصر التنقل */
+nav .nav-items {
+    display: flex; /* عرض العناصر بشكل أفقي */
+    list-style-type: none; /* إزالة النقط من قائمة العناصر */
+    
+}
+
+/* تنسيق كل عنصر فردي داخل قائمة التنقل */
+nav .nav-items .nav-item {
+    padding: 8px 8px; /* مسافة أفقية بين كل عنصر وآخر */
+}
+
+/* تنسيق الروابط داخل عناصر التنقل */
+nav .nav-link {
+    text-decoration: none; /* إزالة الخط السفلي من الرابط */
+    color: #86775f; /* لون أساسي للرابط */
+    font-size: 16px; /* حجم خط قياسي */
+}
+nav .nav-link2 {
+    text-decoration: none; /* إزالة الخط السفلي من الرابط */
+     color: #fff; /* لون أساسي للرابط */
+    font-size: 16px; /* حجم خط قياسي */
+}
+
+/* تأثير التمرير (hover) على روابط التنقل */
+nav .nav-link:hover {
+    color: #4f4638; /* تغيير اللون عند التمرير لزيادة التفاعل */
+}
        
  button{
                 background-color: #685c4a;
@@ -81,7 +122,28 @@ nav {
         </style> 
         </head>
         <body>
-  
+  <nav>
+        <div class="logo">
+            <h1>متحف الحضارات</h1>
+        </div>
+        <ul class="nav-items">
+        <li class="nav-item">
+            <a href="https://seif-9.github.io/-project-my/" class="nav-link">الصفحة الرئيسية</a>
+        </li>
+            <li class="nav-item">
+            <a href="a" class="nav-link">تواصل معنا</a>
+        </li>
+            <li class="nav-item">
+            <a href="a" class="nav-link">تسجيل الدخول</a>
+        </li>
+            <li class="nav-item"><button>
+            <a href="https://moadeluss.github.io/tiikket/" class="nav-link2">اشتر التذاكر الآن</a>
+            </button></li>
+            
+            </ul>
+    </nav>
+
+    
             <div class="div1">
                 <div class="contact">
                  <h2>تواصل معنا</h2>
